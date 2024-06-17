@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chem</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/sub-common.css">
+    <link rel="stylesheet" type="text/css" href="css/sub3.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header-wrap">
+                <div class="header-box">
+                    <div class="logo"><a href="./index.html"><img src="./img/logo.png" alt="NewChem"></a></div>
+                    <nav role="navigation">
+                        <div class="nav-wrap">
+                            <ul id="main-menu">
+                                <li><a href="./index.html">HOME</a></li>
+                                <li><a href="./sub1.html">COMPANY</a>
+                                    <ul id="sub-menu">
+                                        <li><a href="./sub1.html">기업소개</a></li>
+                                        <li><a href="./sub1-2.html">기업 연혁</a></li>
+                                        <li><a href="./sub1-3.html">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./sub2.html">PRODUCTS</a>
+                                    <ul id="sub-menu">
+                                        <li>
+                                            <a href="./sub2-2.html">제품 1<img src="./img/arrow-right-gray.png" alt="바로가기"></a>
+                                            <ul id="sub-in-menu">
+                                                <li><a href="./sub2-2-1.html">제품</a></li>
+                                                <li><a href="./sub2-2-2.html">제품</a></li>
+                                                <li><a href="./sub2-2-3.html">제품</a></li>
+                                                <li><a href="./sub2-2-4.html">제품</a></li>
+                                                <li><a href="./sub2-2-5.html">제품</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="./sub2-3.html">제품 2<img src="./img/arrow-right-gray.png" alt="바로가기"></a>
+                                            <ul id="sub-in-menu">
+                                                <li><a href="./sub2-3-1.html">제품</a></li>
+                                                <li><a href="./sub2-3-2.html">제품</a></li>
+                                                <li><a href="./sub2-3-3.html">제품</a></li>
+                                                <li><a href="./sub2-3-4.html">제품</a></li>
+                                                <li><a href="./sub2-3-5.html">제품</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="./sub2-4.html">제품 3<img src="./img/arrow-right-gray.png" alt="바로가기"></a>
+                                            <ul id="sub-in-menu">
+                                                <li><a href="./sub2-4-1.html">제품</a></li>
+                                                <li><a href="./sub2-4-2.html">제품</a></li>
+                                                <li><a href="./sub2-4-3.html">제품</a></li>
+                                                <li><a href="./sub2-4-4.html">제품</a></li>
+                                                <li><a href="./sub2-4-5.html">제품</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./sub3.html">CONTACT US</a></li>
+                                <li><a href="./sub4.html">DOWNLOADS</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section-wrap">
+                <div class="top-banner">
+                    <p>Contact Us</p>
+                </div>
+                <div class="content01">
+                    <div class="text">
+                        <div class="title">
+                            <p>안녕하세요, 고객님.<br>전문가에게 맡겨주세요!</p>
+                        </div>
+                        <div class="detail">
+                            <p>아래 내용을 작성해서 접수하시면, 전문가가 24시간 이내에 빠르고 성실하게 답변 드리겠습니다.</p>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="input-wrap">
+                            <table>
+                                <tbody onsubmit="sendEmail(); reset(); return false;">
+                                    <tr>
+                                        <td class="title">업체명</td>
+                                        <td colspan=3><input type=text name=shop size=30 id="company"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">성명</td>
+                                        <td><input type=text name=name id="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">전화번호</td>
+                                        <td><input type=text name=number id="number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">E-mail</td>
+                                        <td colspan=3><input type=text name=email size=50 id="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">지역</td>
+                                        <td colspan=3>
+                                            <select name=job  id="address">
+                                                <option>서울특별시</option>
+                                                <option>경기도</option>
+                                                <option>인천광역시</option>
+                                                <option>강원도</option>
+                                                <option>충청남도</option>
+                                                <option>충청북도</option>
+                                                <option>세종특별자치시</option>
+                                                <option>대전광역시</option>
+                                                <option>경상북도</option>
+                                                <option>경상남도</option>
+                                                <option>대구광역시</option>
+                                                <option>울산광역시</option>
+                                                <option>부산광역시</option>
+                                                <option>전라북도</option>
+                                                <option>전라남도</option>
+                                                <option>광주광역시</option>
+                                                <option>제주특별자치도</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">제목</td>
+                                        <td><input type=text name=title id="title"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">내용</td>
+                                        <td colspan=3><textarea rows=6 cols=40 name="note" placeholder="내용을 입력해주세요." id="note"></textarea></td>
+                                    </tr>
+                                    <tr class="agree">
+                                        <td class="title">개인정보 수집 및 이용목적</td>
+                                        <td><input type="checkbox" name="agree" id="check">개인정보의 수집 및 이용목적에 동의합니다.<a href="./agree.html">약관보기</a>
+                                        <span><a id="confirm_OK1" href="javascript:alert('개인정보 수집 및 이용목적 동의 여부를 확인해주세요.');"></span></td>
+                                    </tr>
+                                    <button type="submit" class="send" onclick="checkIt(), Send()" id="send">보내기</button>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <p>(주)NewChem 표기</p>
+                </div>
+                <div class="footer-bottom">
+                    <div class="left">
+                        <ul>
+                            <li><p>대전사무소 | (34816) 대전광역시 중구 목동로 42 302호(목동복합빌딩)</p></li>
+                            <li><p>경기사무소 | (18021) 경기 평택시 도시지원로 121 고덕지식공작소아이타워 501호</p></li>
+                        </ul>
+                        <div class="contact-info">
+                            <ul>
+                                <li><img src="./img/icon-call.png" alt="전화"><p>070-8098-7424</p></li>
+                                <li><img src="./img/icon-fax.png" alt="팩스"><p>042-367-7427</p></li>
+                                <li><img src="./img/icon-mail.png" alt="이메일"><p>cmkim@new-chem.co.kr</p></li>
+                            </ul>
+                        </div>
+                        <p>COPYRIGHT ⓒ NewChem (뉴켐) All rights reserved</p>
+                    </div>
+                    <div class="right">
+                        <div class="logo"><a href="./index.html"><img src="./img/logo-white.png" alt="NewChem"></a></div>
+                        <a href="./sub3.html"><p>Contact Us</p><img src="./img/arrow-right-white.png" alt="화살표"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function Send(){
+            console.log("function call");
+
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "cmkim@new-chem.co.kr",
+                Password : "ECF885AC49C800013571612A618F409CB187",
+                To : 'cmkim@new-chem.co.kr',
+                From : "cmkim@new-chem.co.kr",
+                Subject : "NewChem 상담 신청",
+                Body : "업체명: " + document.getElementById("company").value + "<br> 성명: " + document.getElementById("name").value + "<br> 전화번호: " + document.getElementById("number").value + "<br> 이메일: " + document.getElementById("email").value + "<br> 지역: " + document.getElementById("address").value + "<br> 제목: " + document.getElementById("title").value + "<br> 내용: " + document.getElementById("note").value
+            }).then(
+            message => alert(message)
+            );
+        }
+        function checkIt() {
+            const check_elem = document.querySelector("#check");
+            if (!check_elem.checked) {
+            alert("개인정보 수집 및 이용목적 동의 여부를 확인해주세요.");
+            }
+        }
+    </script>
+</body>
+</html>

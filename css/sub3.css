@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+
+/* section */
+section{margin: 0;width: auto;height: 1500px;padding-top: 85px;}
+.section-wrap{width: 100%;height: 900px;margin: 0 auto;}
+
+
+/* content01 */
+.content01{width: 1300px;height: 1230px;margin: 100px auto 0;}
+
+.text{width: 1000px;height: 150px;margin: 0 auto;}
+.text>.title{}
+.text>.title>p{font-size: 30px;font-weight: 700;color: #44589b}
+.text>.detail{margin-top: 20px;}
+.text>.detail>p{font-size: 18px;font-weight: 400;}
+
+.input{width: 100%;height: 600px;margin: 0 auto;}
+.input>.input-wrap{width: 1000px;height: 600px;margin: 0 auto;}
+.input>.input-wrap>table{width: 1000px;height: 600px;}
+.input>.input-wrap>table>tbody{}
+.input>.input-wrap>table>tbody>tr{width: auto;height: 50px;}
+.input>.input-wrap>table>tbody>tr>.title{display: block;width: 250px;height: 40px;padding-top: 12px;font-weight: 700;letter-spacing: 2px;}
+.input>.input-wrap>table>tbody>tr>td:last-child{}
+
+input{width: 700px;height: 30px;border: 1px solid #bbb;border-radius: 3px;padding-left: 10px;}
+textarea{width: 700px;height: 100px;border: 1px solid #bbb;border-radius: 3px;padding-left: 10px;padding-top: 8px;}
+select{width: 715px;height: 35px;border: 1px solid #bbb;border-radius: 3px;padding-left: 10px;}
+
+
+.agree{width: auto;height: 50px;font-weight: 500;}
+.agree>.title{width: auto;height: 40px;padding-top: 12px;font-weight: 700;letter-spacing: 3px;margin-top: 12px;}
+.agree>td>input{font-size: 8px;display: block;width: 22px;float: left;margin-right: 15px;height: 22px;border: 1px solid #ddd;}
+/* .agree>td:last-child{width: 300px;} */
+.agree>td>a{width: 80px;padding-left: 20px;text-decoration: underline;color: #44589b;font-weight: 700;}
+input#check{cursor:pointer;}
+
+#text-wrap{width: 100%;height: 1300px;background-color: #ddd;margin: 0;padding: 0;}
+#text-wrap>.text{width: 800px;height: 1300px;background-color: #fff;margin: 0 auto;}
+#text-wrap>.text>p{width: 650px;height: auto;margin: 0 auto;padding-top: 100px;line-height: 30px;}
+
+
+.send{border-radius: 50px;width: 980px;height: 60px;background-color: #44589b;position: relative;top: 700px;letter-spacing: 2px;color: #fff;font-size: 20px;cursor: pointer;}
+.send:hover{background-color: #607ee0;transition: 0.2s;}

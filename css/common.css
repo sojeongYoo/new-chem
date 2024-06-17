@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+body::-webkit-scrollbar {
+    width: 12px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #3a71af; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(26, 114, 236, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+
+*{margin: 0;padding: 0;}
+#wrap{width: 100%;margin: 0 auto;height: 100%;position: relative;}
+
+ul,li,ol {list-style:none;}
+a{color: #222; text-decoration: none;}
+button {border: 0;background-color: none;}
+img{border: 0;}
+h1,h2,h3,h4,h5,h6,li,p,a,button,tr,td,input,textarea,option{font-family: 'Noto Sans KR', sans-serif;}
+
+/* header */
+header{margin: 0;width: 100%;height: 85px;background-color: white;position: fixed;box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;z-index: 999;}
+.header-wrap{width: 1300px;height: 70px;margin: 0 auto;padding-top: 10px;}
+.header-wrap>.header-box{width: 1300px;height: 70px;}
+.header-wrap>.header-box>.logo{width: 300px;height: 70px;float: left;}
+.header-wrap>.header-box>.logo>a>img{width: 300px;height: 70px;}
+
+nav{width: 750px;height: 70px;float: left;margin-left: 250px;}
+nav>.nav-wrap{width: 750px;height: 40px;padding-top: 20px;}
+nav>.nav-wrap>ul{width: 750px;height: 40px;display: flex;}
+nav>.nav-wrap>ul>li{width: auto;height: 70px;padding-left: 60px;cursor: pointer;position: relative;z-index: 999;}
+nav>.nav-wrap>ul>li>a{font-weight: 500;}
+nav>.nav-wrap>ul>li>a:hover{color: #44589b;transition: all 0.1s ease-in;}
+
+#sub-menu{position: absolute;background: #ffffff;opacity: 0;visibility: hidden;margin-top: 31px;transition: all 0.2s ease-in;box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;}
+#sub-menu>li{width: 200px;padding: 15px 20px;}
+#sub-menu>li>a{font-weight: 400;text-decoration: none;color: #212121;font-size: 16px;}
+#sub-menu>li>a>img{width: 15px;height: 15px;display: block;float: right;margin-top: 5px;}
+#main-menu>li>#sub-menu>li:hover{background-color: #44589b;transition: all 0.1s ease-in;}
+#main-menu>li>#sub-menu>li:hover>a{color: #fff;}
+#main-menu>li:hover #sub-menu {opacity: 1;visibility: visible;}
+#sub-in-menu{position: absolute;background: #ffffff;opacity: 0;visibility: hidden;transition: all 0.1s ease-in;box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;margin-left: 220px;margin-top: -39px;}
+#sub-in-menu>li{width: 250px;padding: 15px 20px;}
+#sub-in-menu>li>a{font-weight: 400;text-decoration: none;color: #212121;font-size: 16px;}
+#sub-menu #sub-in-menu>li:hover{background-color: #44589b;transition: all 0.1s ease-in;}
+#sub-menu #sub-in-menu>li:hover>a{color: #fff;}
+#sub-menu>li:hover #sub-in-menu {opacity: 1;visibility: visible;}
+
+/* footer */
+footer{width: 100%;height: 320px;background-color: #212121;}
+.footer-wrap{width: 1300px;height: 320px;margin: 0 auto;}
+.footer-top{width: 100%;height: 90px;border-bottom: 1px solid #fff;}
+.footer-top>p{color: #fff;padding: 40px 20px 0 20px;}
+.footer-bottom{width: 100%;height: 200px;margin-top: 20px;}
+.footer-bottom>.left{width: 1000px;height: 200px;float: left;}
+.footer-bottom>.left>ul{}
+.footer-bottom>.left>ul>li{}
+.footer-bottom>.left>ul>li>p{color: #fff;padding: 5px 20px;}
+.footer-bottom>.left>.contact-info{width: 1000px;height: 40px;margin-top: 20px;margin-left: 20px;}
+.footer-bottom>.left>.contact-info>ul{width: 1000px;height: 40px;display: flex;}
+.footer-bottom>.left>.contact-info>ul>li{width: auto;height: 40px;padding-right: 20px;}
+.footer-bottom>.left>.contact-info>ul>li>img{width: 25px;height: 25px;display: block;float: left;}
+.footer-bottom>.left>.contact-info>ul>li>p{color: #fff;padding: 0 10px;float: left;}
+.footer-bottom>.left>p{color: #555;padding: 10px 20px;font-size: 15px;}
+.footer-bottom>.right{width: 300px;height: 150px;float: left;}
+.footer-bottom>.right>.logo{width: 300px;height: 70px;float: left;}
+.footer-bottom>.right>.logo>a{width: 300px;height: 70px;float: left;}
+.footer-bottom>.right>.logo>a>img{width: 300px;height: 70px;float: left;}
+.footer-bottom>.right>a{width: 298px;height: 48px;float: left;border: 1px solid #fff;margin-top: 10px;}
+.footer-bottom>.right>a>p{color: #fff;text-align: center;padding-top: 10px;float: left;padding-left: 50px;letter-spacing: 2px;}
+.footer-bottom>.right>a>img{float: left;width: 25px;height: 25px;display: block;margin-top: 11px;margin-left: 80px;}
+
